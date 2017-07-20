@@ -1,0 +1,3 @@
+ $where['name']=array('like',"%".$_POST['name']."%");
+    $where['status']=array('eq',1);
+  $info['lists'] = model('works_spu')->where($where)->select();
